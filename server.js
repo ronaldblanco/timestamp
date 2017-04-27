@@ -2,12 +2,12 @@ var port = process.env.PORT || 5000 || 8080;//FOR HEROKU port Asignation
 var express = require('express');
 var url = require('url');
 var app = express();
-var root = '/home/ubuntu/workspace/timestamp';
+//var root = '/home/ubuntu/workspace/timestamp';
 
 //app.set('view engine','html');
 //app.set('views','./views');
 app.get('/', function(req, res){
-    res.sendFile(root + '/views/index.html');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 app.get('*', function (req, res) {
