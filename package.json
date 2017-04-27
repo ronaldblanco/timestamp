@@ -1,16 +1,33 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
-  "description": "",
+  "description": "API Timestamp Microservice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Ronald Blanco",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
     "html": "^1.0.0",
     "url": "^0.11.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldblanco/timestamp.git"
+  },
+  "keywords": [
+    "timestamp",
+    "natural",
+    "unix",
+    "format",
+    "date"
+  ],
+  "bugs": {
+    "url": "https://github.com/ronaldblanco/timestamp/issues"
+  },
+  "homepage": "https://github.com/ronaldblanco/timestamp#readme"
 }

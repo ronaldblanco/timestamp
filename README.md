@@ -7,11 +7,12 @@ User stories:
 3) If it does not contain a date or Unix timestamp, it returns null for those properties.
 
 Example usage:
-    https://.../Dec%2015,%202015 OR /December%2015,%202015 OR /Dec 15, 2015
-    https://.../145013760000
-        Example output:
+https://.../Dec%2015,%202015 OR /December%2015,%202015 OR /Dec 15, 2015
+https://.../145013760000
+        
+Example output:
             
-            {
-                "unix": 145013760000,
-                "natural": "Tue Dec 15, 2015"
-            }
+    {
+        "unix": 145013760000,
+        "natural": "Tue Dec 15, 2015"
+    }
