@@ -1,3 +1,4 @@
+var port = process.env.PORT || 5000 || 8080;//FOR HEROKU port Asignation
 var express = require('express');
 var url = require('url');
 var app = express();
@@ -68,8 +69,8 @@ app.get('*', function (req, res) {
 });
 
 
-app.listen(8080, function () {
-  console.log('TimeStamp Api Server listening on port 8080!');
+app.listen(port, function () {
+  console.log('TimeStamp Api Server listening on port '+port+'!');
 });
 
 
